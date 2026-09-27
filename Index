@@ -1,0 +1,410 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2 - CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>Tarea 2 - CSS3</h1>
+        <p>Modelo de Caja, Posicionamiento y Flexbox</p>
+    </header>
+
+    <!-- Menú -->
+    <nav class="menu">
+        <a href="#box-model">Box Model</a>
+        <a href="#position">Position</a>
+        <a href="#float-clear">Float y Clear</a>
+        <a href="#display">Display</a>
+        <a href="#overflow">Overflow</a>
+        <a href="#visibility">Visibility</a>
+        <a href="#z-index">Z-Index</a>
+        <a href="#flexbox">Flexbox</a>
+    </nav>
+
+    <main>
+
+        <!-- Box Model -->
+        <section id="box-model" class="section">
+
+            <h2>1. Modelo de Caja</h2>
+
+            <p>
+                El modelo de caja está formado por contenido,
+                padding, border y margin.
+            </p>
+
+            <div class="box-model-example">
+                <div class="box-content">
+                    Contenido
+                </div>
+            </div>
+
+            <div class="box-information">
+
+                <div class="box-example">
+                    <h3>Content</h3>
+                    <p>Contenido del elemento.</p>
+                </div>
+
+                <div class="box-example">
+                    <h3>Padding</h3>
+                    <p>Espacio interno del elemento.</p>
+                </div>
+
+                <div class="box-example">
+                    <h3>Border</h3>
+                    <p>Borde del elemento.</p>
+                </div>
+
+                <div class="box-example">
+                    <h3>Margin</h3>
+                    <p>Espacio externo del elemento.</p>
+                </div>
+
+            </div>
+
+            <h3>Block e Inline</h3>
+
+            <div class="block-example">
+                Elemento Block
+            </div>
+
+            <span class="inline-example">
+                Elemento Inline
+            </span>
+
+            <span class="inline-example">
+                Otro Inline
+            </span>
+
+            <div class="inline-block-example">
+                Inline-Block
+            </div>
+
+        </section>
+
+
+        <!-- Position -->
+        <section id="position" class="section">
+
+            <h2>2. Position</h2>
+
+            <div class="position-container">
+
+                <div class="position-static">
+                    Static
+                </div>
+
+                <div class="position-relative">
+                    Relative
+                </div>
+
+                <div class="position-absolute">
+                    Absolute
+                </div>
+
+            </div>
+
+            <div class="position-fixed">
+                Fixed
+            </div>
+
+        </section>
+
+
+        <!-- Float y Clear -->
+        <section id="float-clear" class="section">
+
+            <h2>3. Float y Clear</h2>
+
+            <div class="float-container">
+
+                <div class="float-left">
+                    Float Left
+                </div>
+
+                <div class="float-right">
+                    Float Right
+                </div>
+
+                <p>
+                    Este texto muestra el comportamiento de
+                    los elementos con float.
+                </p>
+
+                <div class="clear-example">
+                    Clear: both
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Display -->
+        <section id="display" class="section">
+
+            <h2>4. Display</h2>
+
+            <div class="display-block">
+                Display Block
+            </div>
+
+            <span class="display-inline">
+                Display Inline
+            </span>
+
+            <span class="display-inline">
+                Otro Inline
+            </span>
+
+            <div class="display-inline-block">
+                Inline Block
+            </div>
+
+            <div class="display-none">
+                Este elemento no se muestra.
+            </div>
+
+            <p>
+                El elemento anterior utiliza display none.
+            </p>
+
+        </section>
+
+
+        <!-- Overflow -->
+        <section id="overflow" class="section">
+
+            <h2>5. Overflow</h2>
+
+            <div class="overflow-container">
+
+                <div class="overflow-box visible">
+                    <h3>Visible</h3>
+                    <p>
+                        El contenido puede salir del elemento.
+                    </p>
+                </div>
+
+                <div class="overflow-box hidden">
+                    <h3>Hidden</h3>
+                    <p>
+                        El contenido que sobra queda oculto.
+                    </p>
+                </div>
+
+                <div class="overflow-box scroll">
+                    <h3>Scroll</h3>
+                    <p>
+                        Se muestran barras de desplazamiento.
+                    </p>
+                </div>
+
+                <div class="overflow-box auto">
+                    <h3>Auto</h3>
+                    <p>
+                        El navegador muestra las barras cuando son necesarias.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Visibility -->
+        <section id="visibility" class="section">
+
+            <h2>6. Visibility</h2>
+
+            <div class="visibility-visible">
+                Visibility: Visible
+            </div>
+
+            <div class="visibility-hidden">
+                Visibility: Hidden
+            </div>
+
+            <div class="visibility-collapse">
+                Visibility: Collapse
+            </div>
+
+            <p>
+                Hidden oculta el elemento pero mantiene su espacio.
+            </p>
+
+        </section>
+
+
+        <!-- Z-Index -->
+        <section id="z-index" class="section">
+
+            <h2>7. Z-Index</h2>
+
+            <div class="z-index-container">
+
+                <div class="z-box z-one">
+                    Z-Index 1
+                </div>
+
+                <div class="z-box z-two">
+                    Z-Index 2
+                </div>
+
+                <div class="z-box z-three">
+                    Z-Index 3
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Flexbox -->
+        <section id="flexbox" class="section">
+
+            <h2>8. Flexbox</h2>
+
+            <h3>Flex Container</h3>
+
+            <div class="flex-container">
+
+                <div class="flex-item item-one">
+                    Item 1
+                </div>
+
+                <div class="flex-item item-two">
+                    Item 2
+                </div>
+
+                <div class="flex-item item-three">
+                    Item 3
+                </div>
+
+            </div>
+
+
+            <h3>Flex Direction</h3>
+
+            <div class="flex-direction-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+
+            <h3>Flex Wrap</h3>
+
+            <div class="flex-wrap-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+
+            <h3>Justify Content</h3>
+
+            <div class="justify-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+
+            <h3>Align Items</h3>
+
+            <div class="align-items-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+
+            <h3>Align Content</h3>
+
+            <div class="align-content-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+
+
+            <h3>Flex Items</h3>
+
+            <div class="flex-items-example">
+                <div class="grow">Flex Grow</div>
+                <div class="shrink">Flex Shrink</div>
+                <div class="basis">Flex Basis</div>
+            </div>
+
+
+            <h3>Order</h3>
+
+            <div class="order-example">
+                <div class="order-three">1</div>
+                <div class="order-one">2</div>
+                <div class="order-two">3</div>
+            </div>
+
+
+            <h3>Align Self</h3>
+
+            <div class="align-self-example">
+                <div>Normal</div>
+                <div class="self-center">Center</div>
+                <div>Normal</div>
+            </div>
+
+
+            <h3>Flex Responsive</h3>
+
+            <div class="responsive-container">
+
+                <article>
+                    <h3>Tarjeta 1</h3>
+                    <p>
+                        Diseño adaptable a diferentes pantallas.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Tarjeta 2</h3>
+                    <p>
+                        Flexbox permite organizar los elementos.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Tarjeta 3</h3>
+                    <p>
+                        El contenido se adapta al espacio disponible.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Tarea 2 - CSS3 | Diseño de Aplicaciones Web</p>
+    </footer>
+
+</body>
+</html>
+```
